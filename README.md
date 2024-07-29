@@ -8,11 +8,11 @@ Measures the cosine of the angle between two vectors.
 Ranges from -1 (completely dissimilar) to 1 (identical).
 Commonly used for text similarity.
 Python
+
 import numpy as np
 
 def cosine_similarity(v1, v2):
   return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
-Use code with caution.
 
 2. Euclidean Distance
 Measures the straight-line distance between two points in Euclidean space.
@@ -23,7 +23,6 @@ import numpy as np
 
 def euclidean_distance(v1, v2):
   return np.linalg.norm(v1 - v2)
-Use code with caution.
 
 3. Manhattan Distance
 Measures the distance between two points by summing the absolute differences of their Cartesian coordinates.
@@ -34,7 +33,6 @@ import numpy as np
 
 def manhattan_distance(v1, v2):
   return np.sum(np.abs(v1 - v2))
-Use code with caution.
 
 Choosing the Right Metric
 The best metric depends on the nature of your data and the specific problem you're trying to solve.
